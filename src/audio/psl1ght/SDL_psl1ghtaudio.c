@@ -64,6 +64,12 @@ PSL1GHT_AUD_OpenDevice(_THIS, const char *devname, int iscapture)
         case AUDIO_F32MSB:
             valid_datatype = 1;
             break;
+        case AUDIO_S8:
+            valid_datatype = 1;
+            break;
+        case AUDIO_U8:
+            valid_datatype = 1;
+            break;
         default:
             test_format = SDL_NextAudioFormat();
             break;
@@ -113,10 +119,10 @@ PSL1GHT_AUD_OpenDevice(_THIS, const char *devname, int iscapture)
 	_last_filled_buf = _config.numBlocks - 1;
 
 	this->spec.format = test_format;
-	this->spec.size = sizeof(float) * AUDIO_BLOCK_SAMPLES * _config.channelCount;
+	/*this->spec.size = sizeof(float) * AUDIO_BLOCK_SAMPLES * _config.channelCount;
 	this->spec.freq = 48000;
 	this->spec.samples = AUDIO_BLOCK_SAMPLES;
-	this->spec.channels = _config.channelCount;
+	this->spec.channels = _config.channelCount;*/
 
     return ret == 0;
 }
