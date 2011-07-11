@@ -28,7 +28,6 @@
  *  SDL video driver.  Renamed to "DUMMY" by Sam Lantinga.
  */
 
-#include "SDL_config.h"
 #include "SDL_video.h"
 #include "SDL_mouse.h"
 #include "../SDL_sysvideo.h"
@@ -37,12 +36,12 @@
 
 #include "SDL_PSL1GHTvideo.h"
 #include "SDL_PSL1GHTevents_c.h"
-#include "SDL_PSL1GHTrender_c.h"
 #include "SDL_PSL1GHTmodes_c.h"
 
 
 #include <malloc.h>
 #include <assert.h>
+#include <unistd.h>
 
 #include <rsx/rsx.h>
 
@@ -107,8 +106,6 @@ VideoBootStrap PSL1GHT_bootstrap = {
 int
 PSL1GHT_VideoInit(_THIS)
 {
-    int keyboard;
-	SDL_DisplayMode mode;
     SDL_DeviceData *devdata = NULL;
 
     devdata = (SDL_DeviceData*) SDL_calloc(1, sizeof(SDL_DeviceData));
@@ -125,24 +122,8 @@ PSL1GHT_VideoInit(_THIS)
     initializeGPU(devdata);
     PSL1GHT_InitModes(_this);
 
-    SDL_AddRenderDriver(&_this->displays[0], &SDL_PSL1GHT_RenderDriver);
-
-
     gcmSetFlipMode(GCM_FLIP_VSYNC); // Wait for VSYNC to flip
 
-    /* Enable mouse and keyboard support */
-    keyboard = ioKbInit(4); /*Init the PS3 Keyboard*/
-    if (keyboard != 0) {
-        SDL_SetError("Unable to initialize keyboard\n");
-        return (-1);
-    }
-	else
-	{
-		printf("PSL1GHT Keyboard initialized.\n");
-	}
-    if (PSL1GHT_initkeymaps(keyboard) < 0) {
-        return (-1);
-    }
     /* We're done! */
     return 0;
 }
