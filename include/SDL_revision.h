@@ -1,2 +1,2 @@
-#define SDL_REVISION "git-709-gf92b9a0"
-#define SDL_REVISION_NUMBER 709
+#define SDL_REVISION "git-185-g0c24a99"
+#define SDL_REVISION_NUMBER 185
