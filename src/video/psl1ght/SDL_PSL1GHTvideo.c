@@ -89,8 +89,8 @@ PSL1GHT_CreateDevice(int devindex)
     /* Set the function pointers */
     device->VideoInit = PSL1GHT_VideoInit;
     device->VideoQuit = PSL1GHT_VideoQuit;
-    device->SetDisplayMode = PSL1GHT_SetDisplayMode;
     device->GetDisplayModes = PSL1GHT_GetDisplayModes;
+    device->SetDisplayMode = PSL1GHT_SetDisplayMode;
     device->PumpEvents = PSL1GHT_PumpEvents;
 
     device->free = PSL1GHT_DeleteDevice;

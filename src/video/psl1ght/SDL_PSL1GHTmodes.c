@@ -131,10 +131,10 @@ PSL1GHT_GetDisplayModes(_THIS, SDL_VideoDisplay * display)
         ps3fb_modedb[n].driverdata = &ps3fb_data[n];
 
         /* Add DisplayMode to list */
-        deprintf(2, "Adding resolution %u x %u\n", ps3fb_modedb[n].w, ps3fb_modedb[n].h);
+        printf("Adding resolution %u x %u\n", ps3fb_modedb[n].w, ps3fb_modedb[n].h);
         SDL_AddDisplayMode(display, &ps3fb_modedb[n]);
     }
-    deprintf(1, "-PSL1GHT_GetDisplayModes()\n");
+    printf("-PSL1GHT_GetDisplayModes()\n");
 }
 
 int
@@ -145,7 +145,7 @@ PSL1GHT_SetDisplayMode(_THIS, SDL_VideoDisplay * display, SDL_DisplayMode * mode
 	videoState state;
 
     /* Set the new DisplayMode */
-    deprintf(2, "Setting PS3_MODE to %u\n", dispdata->vconfig.resolution);
+    printf("Setting PS3_MODE to %u\n", dispdata->vconfig.resolution);
     if ( videoConfigure(0, &dispdata->vconfig, NULL, 0) != 0)
 	{
         deprintf(2, "Could not set PS3FB_MODE\n");
