@@ -326,7 +326,7 @@ PSL1GHT_UpdateViewport(SDL_Renderer * renderer)
         renderer->viewport.w = surface->w;
         renderer->viewport.h = surface->h;
     }
-
+  
     /* Center drawable region on screen */ 
 	if (renderer->window && surface->w > renderer->window->w) { 
 		renderer->viewport.x += (surface->w - renderer->window->w)/2; 
