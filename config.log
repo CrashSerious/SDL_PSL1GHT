@@ -915,7 +915,7 @@ configure:15677: result: no
 configure:15686: checking for pow
 configure:15686: powerpc64-ps3-elf-gcc -o conftest -O2 -Wall -I/usr/local/ps3dev/psl1ght/ppu/include -I./include   -I./include  -L/usr/local/ps3dev/psl1ght/ppu/lib -lrt -llv2  conftest.c  >&5
 conftest.c:66:6: warning: conflicting types for built-in function 'pow'
-/tmp/ccZECRO5.o: In function `.main':
+/tmp/ccbLmTtk.o: In function `.main':
 conftest.c:(.text.main+0xc): undefined reference to `.pow'
 collect2: ld returned 1 exit status
 configure:15686: $? = 1
@@ -1008,7 +1008,7 @@ configure:15717: $? = 0
 configure:15726: result: yes
 configure:15744: checking for mprotect
 configure:15744: powerpc64-ps3-elf-gcc -o conftest -O2 -Wall -I/usr/local/ps3dev/psl1ght/ppu/include -I./include   -I./include  -L/usr/local/ps3dev/psl1ght/ppu/lib -lrt -llv2  conftest.c  >&5
-/tmp/ccIz3rsh.o: In function `.main':
+/tmp/ccSmCmNv.o: In function `.main':
 conftest.c:(.text.main+0xc): undefined reference to `.mprotect'
 collect2: ld returned 1 exit status
 configure:15744: $? = 1
@@ -1179,7 +1179,7 @@ configure:15774: $? = 0
 configure:15774: result: yes
 configure:15774: checking for _strrev
 configure:15774: powerpc64-ps3-elf-gcc -o conftest -O2 -Wall -I/usr/local/ps3dev/psl1ght/ppu/include -I./include   -I./include  -L/usr/local/ps3dev/psl1ght/ppu/lib -lrt -llv2  conftest.c  >&5
-/tmp/ccNSXdeu.o: In function `.main':
+/tmp/cc9qAEkS.o: In function `.main':
 conftest.c:(.text.main+0xc): undefined reference to `._strrev'
 collect2: ld returned 1 exit status
 configure:15774: $? = 1
@@ -1285,7 +1285,7 @@ configure: failed program was:
 configure:15774: result: no
 configure:15774: checking for _strupr
 configure:15774: powerpc64-ps3-elf-gcc -o conftest -O2 -Wall -I/usr/local/ps3dev/psl1ght/ppu/include -I./include   -I./include  -L/usr/local/ps3dev/psl1ght/ppu/lib -lrt -llv2  conftest.c  >&5
-/tmp/ccP00RpD.o: In function `.main':
+/tmp/ccR4eOYY.o: In function `.main':
 conftest.c:(.text.main+0xc): undefined reference to `._strupr'
 collect2: ld returned 1 exit status
 configure:15774: $? = 1
@@ -1391,7 +1391,7 @@ configure: failed program was:
 configure:15774: result: no
 configure:15774: checking for _strlwr
 configure:15774: powerpc64-ps3-elf-gcc -o conftest -O2 -Wall -I/usr/local/ps3dev/psl1ght/ppu/include -I./include   -I./include  -L/usr/local/ps3dev/psl1ght/ppu/lib -lrt -llv2  conftest.c  >&5
-/tmp/ccUNkL7H.o: In function `.main':
+/tmp/ccAwPBe4.o: In function `.main':
 conftest.c:(.text.main+0xc): undefined reference to `._strlwr'
 collect2: ld returned 1 exit status
 configure:15774: $? = 1
@@ -1512,7 +1512,7 @@ configure:15774: $? = 0
 configure:15774: result: yes
 configure:15774: checking for itoa
 configure:15774: powerpc64-ps3-elf-gcc -o conftest -O2 -Wall -I/usr/local/ps3dev/psl1ght/ppu/include -I./include   -I./include  -L/usr/local/ps3dev/psl1ght/ppu/lib -lrt -llv2  conftest.c  >&5
-/tmp/ccxz8jj2.o: In function `.main':
+/tmp/ccdzxQLo.o: In function `.main':
 conftest.c:(.text.main+0xc): undefined reference to `.itoa'
 collect2: ld returned 1 exit status
 configure:15774: $? = 1
@@ -1621,7 +1621,7 @@ configure: failed program was:
 configure:15774: result: no
 configure:15774: checking for _ltoa
 configure:15774: powerpc64-ps3-elf-gcc -o conftest -O2 -Wall -I/usr/local/ps3dev/psl1ght/ppu/include -I./include   -I./include  -L/usr/local/ps3dev/psl1ght/ppu/lib -lrt -llv2  conftest.c  >&5
-/tmp/cclfKvN4.o: In function `.main':
+/tmp/cc1DdaEh.o: In function `.main':
 conftest.c:(.text.main+0xc): undefined reference to `._ltoa'
 collect2: ld returned 1 exit status
 configure:15774: $? = 1
@@ -1730,7 +1730,7 @@ configure: failed program was:
 configure:15774: result: no
 configure:15774: checking for _uitoa
 configure:15774: powerpc64-ps3-elf-gcc -o conftest -O2 -Wall -I/usr/local/ps3dev/psl1ght/ppu/include -I./include   -I./include  -L/usr/local/ps3dev/psl1ght/ppu/lib -lrt -llv2  conftest.c  >&5
-/tmp/ccyZNsz9.o: In function `.main':
+/tmp/ccj3JUNm.o: In function `.main':
 conftest.c:(.text.main+0xc): undefined reference to `._uitoa'
 collect2: ld returned 1 exit status
 configure:15774: $? = 1
@@ -1839,7 +1839,7 @@ configure: failed program was:
 configure:15774: result: no
 configure:15774: checking for _ultoa
 configure:15774: powerpc64-ps3-elf-gcc -o conftest -O2 -Wall -I/usr/local/ps3dev/psl1ght/ppu/include -I./include   -I./include  -L/usr/local/ps3dev/psl1ght/ppu/lib -lrt -llv2  conftest.c  >&5
-/tmp/ccOekKSe.o: In function `.main':
+/tmp/ccgZtpDr.o: In function `.main':
 conftest.c:(.text.main+0xc): undefined reference to `._ultoa'
 collect2: ld returned 1 exit status
 configure:15774: $? = 1
@@ -1956,7 +1956,7 @@ configure:15774: $? = 0
 configure:15774: result: yes
 configure:15774: checking for _i64toa
 configure:15774: powerpc64-ps3-elf-gcc -o conftest -O2 -Wall -I/usr/local/ps3dev/psl1ght/ppu/include -I./include   -I./include  -L/usr/local/ps3dev/psl1ght/ppu/lib -lrt -llv2  conftest.c  >&5
-/tmp/ccupamxt.o: In function `.main':
+/tmp/ccJ5kP8H.o: In function `.main':
 conftest.c:(.text.main+0xc): undefined reference to `._i64toa'
 collect2: ld returned 1 exit status
 configure:15774: $? = 1
@@ -2067,7 +2067,7 @@ configure: failed program was:
 configure:15774: result: no
 configure:15774: checking for _ui64toa
 configure:15774: powerpc64-ps3-elf-gcc -o conftest -O2 -Wall -I/usr/local/ps3dev/psl1ght/ppu/include -I./include   -I./include  -L/usr/local/ps3dev/psl1ght/ppu/lib -lrt -llv2  conftest.c  >&5
-/tmp/ccuaeYyA.o: In function `.main':
+/tmp/ccIml0uK.o: In function `.main':
 conftest.c:(.text.main+0xc): undefined reference to `._ui64toa'
 collect2: ld returned 1 exit status
 configure:15774: $? = 1
@@ -2204,7 +2204,7 @@ configure:15774: $? = 0
 configure:15774: result: yes
 configure:15774: checking for _stricmp
 configure:15774: powerpc64-ps3-elf-gcc -o conftest -O2 -Wall -I/usr/local/ps3dev/psl1ght/ppu/include -I./include   -I./include  -L/usr/local/ps3dev/psl1ght/ppu/lib -lrt -llv2  conftest.c  >&5
-/tmp/ccYPcdKZ.o: In function `.main':
+/tmp/ccR3EDlj.o: In function `.main':
 conftest.c:(.text.main+0xc): undefined reference to `._stricmp'
 collect2: ld returned 1 exit status
 configure:15774: $? = 1
@@ -2326,7 +2326,7 @@ configure:15774: $? = 0
 configure:15774: result: yes
 configure:15774: checking for _strnicmp
 configure:15774: powerpc64-ps3-elf-gcc -o conftest -O2 -Wall -I/usr/local/ps3dev/psl1ght/ppu/include -I./include   -I./include  -L/usr/local/ps3dev/psl1ght/ppu/lib -lrt -llv2  conftest.c  >&5
-/tmp/ccpeAKF9.o: In function `.main':
+/tmp/ccG70Qzm.o: In function `.main':
 conftest.c:(.text.main+0xc): undefined reference to `._strnicmp'
 collect2: ld returned 1 exit status
 configure:15774: $? = 1
@@ -2464,7 +2464,7 @@ configure:15774: $? = 0
 configure:15774: result: yes
 configure:15774: checking for sigaction
 configure:15774: powerpc64-ps3-elf-gcc -o conftest -O2 -Wall -I/usr/local/ps3dev/psl1ght/ppu/include -I./include   -I./include  -L/usr/local/ps3dev/psl1ght/ppu/lib -lrt -llv2  conftest.c  >&5
-/tmp/cc4A3ODy.o: In function `.main':
+/tmp/ccXKsSyM.o: In function `.main':
 conftest.c:(.text.main+0xc): undefined reference to `.sigaction'
 collect2: ld returned 1 exit status
 configure:15774: $? = 1
@@ -2590,7 +2590,7 @@ configure:15774: $? = 0
 configure:15774: result: yes
 configure:15774: checking for nanosleep
 configure:15774: powerpc64-ps3-elf-gcc -o conftest -O2 -Wall -I/usr/local/ps3dev/psl1ght/ppu/include -I./include   -I./include  -L/usr/local/ps3dev/psl1ght/ppu/lib -lrt -llv2  conftest.c  >&5
-/tmp/ccu2anRF.o: In function `.main':
+/tmp/cc2EuABT.o: In function `.main':
 conftest.c:(.text.main+0xc): undefined reference to `.nanosleep'
 collect2: ld returned 1 exit status
 configure:15774: $? = 1
@@ -2713,7 +2713,7 @@ configure: failed program was:
 configure:15774: result: no
 configure:15774: checking for sysconf
 configure:15774: powerpc64-ps3-elf-gcc -o conftest -O2 -Wall -I/usr/local/ps3dev/psl1ght/ppu/include -I./include   -I./include  -L/usr/local/ps3dev/psl1ght/ppu/lib -lrt -llv2  conftest.c  >&5
-/tmp/ccyCCyGK.o: In function `.main':
+/tmp/ccjn0DMY.o: In function `.main':
 conftest.c:(.text.main+0xc): undefined reference to `.sysconf'
 collect2: ld returned 1 exit status
 configure:15774: $? = 1
@@ -2836,7 +2836,7 @@ configure: failed program was:
 configure:15774: result: no
 configure:15774: checking for sysctlbyname
 configure:15774: powerpc64-ps3-elf-gcc -o conftest -O2 -Wall -I/usr/local/ps3dev/psl1ght/ppu/include -I./include   -I./include  -L/usr/local/ps3dev/psl1ght/ppu/lib -lrt -llv2  conftest.c  >&5
-/tmp/ccGcfjgI.o: In function `.main':
+/tmp/ccKiXtZ3.o: In function `.main':
 conftest.c:(.text.main+0xc): undefined reference to `.sysctlbyname'
 collect2: ld returned 1 exit status
 configure:15774: $? = 1
@@ -3140,7 +3140,7 @@ configure: failed program was:
 configure:15871: result: no
 configure:15879: checking for iconv
 configure:15879: powerpc64-ps3-elf-gcc -o conftest -O2 -Wall -I/usr/local/ps3dev/psl1ght/ppu/include -I./include   -I./include  -L/usr/local/ps3dev/psl1ght/ppu/lib -lrt -llv2  conftest.c  -lm >&5
-/tmp/ccqwVOnU.o: In function `.main':
+/tmp/ccuuLCZ6.o: In function `.main':
 conftest.c:(.text.main+0xc): undefined reference to `.iconv'
 collect2: ld returned 1 exit status
 configure:15879: $? = 1
