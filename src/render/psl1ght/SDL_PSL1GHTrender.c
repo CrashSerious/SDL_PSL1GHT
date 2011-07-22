@@ -189,7 +189,6 @@ PSL1GHT_CreateRenderer(SDL_Window * window, Uint32 flags)
             SDL_OutOfMemory();
             return NULL;
         }
-
     }
 
     deprintf (1,  "\tFinished\n");
@@ -326,15 +325,15 @@ PSL1GHT_UpdateViewport(SDL_Renderer * renderer)
         renderer->viewport.w = surface->w;
         renderer->viewport.h = surface->h;
     }
-  
-    /* Center drawable region on screen */ 
-	if (renderer->window && surface->w > renderer->window->w) { 
-		renderer->viewport.x += (surface->w - renderer->window->w)/2; 
-		} 
-	if (renderer->window && surface->h > renderer->window->h) { 
-		renderer->viewport.y += (surface->h - renderer->window->h)/2; 
-		} 
 
+    /* Center drawable region on screen */
+    if (renderer->window && surface->w > renderer->window->w) {
+        renderer->viewport.x += (surface->w - renderer->window->w)/2;
+    }
+    if (renderer->window && surface->h > renderer->window->h) {
+        renderer->viewport.y += (surface->h - renderer->window->h)/2;
+    }
+    
     SDL_SetClipRect(data->screens[0], &renderer->viewport);
     SDL_SetClipRect(data->screens[1], &renderer->viewport);
     return 0;
