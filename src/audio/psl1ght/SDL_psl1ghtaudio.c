@@ -77,6 +77,7 @@ PSL1GHT_AUD_OpenDevice(_THIS, const char *devname, int iscapture)
     }
 
     int ret=audioInit();
+	deprintf("audioInit: %d\n",ret);
 
 	//set some parameters we want
 	//either 2 or 8 channel
@@ -185,10 +186,10 @@ PSL1GHT_AUD_GetDeviceBuf(_THIS)
 
 /* This function waits until it is possible to write a full sound buffer */
 static void
-ALSA_WaitDevice(_THIS)
+PSL1GHT_AUD_WaitDevice(_THIS)
 {
     /* We're in blocking mode, so there's nothing to do here */
-	//deprintf( "ALSA_WaitDevice(%08X.%08X)\n", SHW64(this));
+	deprintf( "PSL1GHT_AUD_WaitDevice(%08X.%08X)\n", SHW64(this));
 	
 	sys_event_t event;
 	s32 ret = sysEventQueueReceive( _snd_queue, &event, 20 * 1000);
@@ -202,10 +203,10 @@ PSL1GHT_AUD_Init(SDL_AudioDriverImpl * impl)
 	deprintf( "PSL1GHT_AUD_Init(%08X.%08X)\n", SHW64(impl));
 	/* Set the function pointers */
 	impl->OpenDevice = PSL1GHT_AUD_OpenDevice;
-	//impl->PlayDevice = PSL1GHT_AUD_PlayDevice;
-    impl->WaitDevice = ALSA_WaitDevice;
-	impl->CloseDevice = PSL1GHT_AUD_CloseDevice;
+	impl->PlayDevice = PSL1GHT_AUD_PlayDevice;
+    impl->WaitDevice = PSL1GHT_AUD_WaitDevice;
 	impl->GetDeviceBuf = PSL1GHT_AUD_GetDeviceBuf;
+	impl->CloseDevice = PSL1GHT_AUD_CloseDevice;
 
     /* and the capabilities */
     impl->OnlyHasDefaultOutputDevice = 1;
